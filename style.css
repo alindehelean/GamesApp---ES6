@@ -1,0 +1,135 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container div{
+    margin-top: 54px;
+    border: calc(8px + 0.2vw) solid transparent;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+.update{
+    border: none;   
+}
+
+.delete-btn {
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    border: none;
+    color: white;  
+}
+
+
+.update-btn {
+    width: 100px;
+    height: 20px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+
+.submitBtn {
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    border: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+img {
+    width: 90px;
+    float:left;
+    margin: 10px;
+}
+
+h1 {
+    color: blue;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 10px;
+    border-radius: 5%;
+}
+
+.creationForm {
+    display: flex;
+    flex-direction: column;
+    border: calc(8px + 0.2vw) solid transparent;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 50px 50px;
+
+}
+
+.creationForm>label,
+.creationForm>input,
+.creationForm>textarea,
+.creationForm>select
+ {
+    display: block;
+    margin: 5px 40px;
+}
+
+.inputError {
+    border: 1px solid red;
+}
+
+.errorMsg {
+    margin-left: 10px;
+    color: red;
+    display: block;
+    font-size: 14px;
+}
+
+.updateForm {
+    display:flex;
+    flex-direction: column;
+
+    margin: 5px 4px;
+
+}
+
+.updateForm>label,
+.updateForm>input,
+.updateForm>textarea
+ {
+    display: block;
+    margin: 5px 10px;
+ }
+
+ .editBtn {
+    width: 100px;
+    height: 20px;
+    background-color: green;
+    border: none;
+    color: white;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+.cancelBtn{
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+#updateFormm {
+    display: none;
+}
