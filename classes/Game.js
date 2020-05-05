@@ -102,7 +102,7 @@ class Game {
                 this.eraseGame(gameDiv);
             }
             else if (event.target.classList.contains('update-btn')) {
-                this.createUpdateForm(gameDiv);
+                this.createUpdateForm(gameDiv);  
             }
             else if (event.target.classList.contains('cancelBtn')) {
                 this.removeElementFromDOM(gameDiv.parentElement);

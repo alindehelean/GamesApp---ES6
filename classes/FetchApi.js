@@ -21,7 +21,7 @@ class FetchApi {
     }
     async createGameRequest(gameObj) {
         const response = await fetch(`${this.apiUrl}` + "/games", {
-            method: "POST",
+            method: "POST",    
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
             },

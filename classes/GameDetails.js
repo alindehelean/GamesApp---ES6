@@ -14,7 +14,7 @@ class GameDetails extends Game {
             gameImageUrl: document.getElementById("gameImageUrl"),
             gameRelease: document.getElementById("gameRelease")
         };
-        return valuesFromForm;
+        return valuesFromForm;  
     }
     validateInputs() {
         const valuesForm = this.getValuesFromForm();

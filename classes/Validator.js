@@ -25,7 +25,7 @@ const validator = {
 
     validateReleaseTimestampElement: function (inputElement, errorMessage){
         if(isNaN(inputElement.value) && inputElement.value !== "") {
-            validator.buildErrorMessage(inputElement, errorMessage);
+            validator.buildErrorMessage(inputElement, errorMessage); 
         }
     }
 
