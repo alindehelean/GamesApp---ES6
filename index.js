@@ -1,7 +1,7 @@
 const apiUrl = "https://games-app-siit.herokuapp.com";
 
 const fetchApi = new FetchApi(apiUrl);
-const createNewGame = new GameDetails("", "", "","",fetchApi, "", "", "");
+const createNewGame = new GameDetails("", "", "", "", fetchApi, "", "", "");
 createNewGame.initCreateGame();
 
 async function startApp() {
@@ -13,10 +13,11 @@ async function startApp() {
         let gameObj = games.createDomElement();
         container1.appendChild(gameObj);
         games.initEvents();
+        games.localStorageTheme();
     }
 }
 
-startApp();  
+startApp();
 
 
 
@@ -30,4 +31,9 @@ startApp();
 
 
 
-    
+
+
+
+
+
+

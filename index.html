@@ -7,6 +7,17 @@
     <title>Games App</title>
 </head>
 <body>
+
+    <div id="theme">
+    <p>Chose app theme:</p>
+    <label for="theme">Light</label>
+    <input type="radio" name="theme" value="light" />
+    <label for="theme">Dark</label>
+    <input type="radio" name="theme" value="dark" />
+    </div>
+
+
+
     <form class="creationForm">
         <label for="gameTitle">Title *</label>
         <input type="text" value="" name="gameTitle" id="gameTitle" />
@@ -31,6 +42,7 @@
         <input type="text" name="gameRelease" id="gameRelease" />
 
         <button class="submitBtn">Create Game</button>   
+
     </form>
 
     <div class="container"></div>

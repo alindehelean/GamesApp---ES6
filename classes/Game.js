@@ -115,6 +115,29 @@ class Game {
             }
         });
     }
+
+    localStorageTheme() {
+        const buttons = document.getElementsByName("theme");
+        buttons.forEach(function (element, index) {
+            if (buttons[index].value === localStorage.theme) {
+                buttons[index].checked = "checked";
+            }
+            if (buttons[index].value === "light" && buttons[index].checked === true) {
+                document.body.style.backgroundColor = "#f0ffff";
+            }
+            if (buttons[index].value === "dark" && buttons[index].checked === true) {
+                document.body.style.backgroundColor = "#660000";
+            }
+            element.addEventListener('click', (event) => {
+                localStorage.setItem("theme", `${event.target.value}`)
+                if (event.target.value === "light") {
+                    document.body.style.backgroundColor = "#f0ffff";
+                } else if (event.target.value === "dark") {
+                    document.body.style.backgroundColor = "#660000";
+                }
+            })
+        })
+    }
 }
 
 
