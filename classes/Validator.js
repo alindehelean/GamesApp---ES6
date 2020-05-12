@@ -7,7 +7,7 @@ const validator = {
         errorMsgElement.innerHTML = errosMsg;
         inputEl.after(errorMsgElement);
     },
-
+ 
 
     validateFormElement: function (inputElement, errorMessage){
         if(inputElement.value === "") {

@@ -102,7 +102,7 @@ class Game {
                 this.eraseGame(gameDiv);
             }
             else if (event.target.classList.contains('update-btn')) {
-                this.createUpdateForm(gameDiv);  
+                this.createUpdateForm(gameDiv);
             }
             else if (event.target.classList.contains('cancelBtn')) {
                 this.removeElementFromDOM(gameDiv.parentElement);
@@ -124,8 +124,7 @@ class Game {
             }
             if (buttons[index].value === "light" && buttons[index].checked === true) {
                 document.body.style.backgroundColor = "#f0ffff";
-            }
-            if (buttons[index].value === "dark" && buttons[index].checked === true) {
+            } else if (buttons[index].value === "dark" && buttons[index].checked === true) {
                 document.body.style.backgroundColor = "#660000";
             }
             element.addEventListener('click', (event) => {

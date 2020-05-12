@@ -5,7 +5,7 @@ class FetchApi {
     async getGamesList() {
         const response = await fetch(`${this.apiUrl}` + "/games", {
             method: "GET",
-            headers: {
+            headers: { 
                 "Content-Type": "application/x-www-form-urlencoded"
             }
         });

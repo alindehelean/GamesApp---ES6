@@ -5,7 +5,7 @@ class GameDetails extends Game {
         this.publisher = publisher;
         this.release = release;
     }
-    getValuesFromForm() {
+    getValuesFromForm() { 
         const valuesFromForm = {
             gameTitle: document.getElementById("gameTitle"),
             gameDescription: document.getElementById("gameDescription"),
