@@ -117,14 +117,14 @@ class Game {
     }
 
     localStorageTheme() {
-        const buttons = document.getElementsByName("theme");
-        buttons.forEach(function (element, index) {
-            if (buttons[index].value === localStorage.theme) {
-                buttons[index].checked = "checked";
+        const themeBtns = document.getElementsByName("theme");
+        themeBtns.forEach(function (element, index) {
+            if (themeBtns[index].value === localStorage.theme) {
+                themeBtns[index].checked = "checked";
             }
-            if (buttons[index].value === "light" && buttons[index].checked === true) {
+            if (themeBtns[index].value === "light" && themeBtns[index].checked === true) {
                 document.body.style.backgroundColor = "#f0ffff";
-            } else if (buttons[index].value === "dark" && buttons[index].checked === true) {
+            } else if (themeBtns[index].value === "dark" && themeBtns[index].checked === true) {
                 document.body.style.backgroundColor = "#660000";
             }
             element.addEventListener('click', (event) => {
@@ -135,6 +135,33 @@ class Game {
                     document.body.style.backgroundColor = "#660000";
                 }
             })
+        })
+    }
+
+    readCookie(name) {
+        const nameEQ = name + "=";
+            const cookieArray = document.cookie.split(';');
+            for(let i=0;i < cookieArray.length;i++) {
+               const cookieArrayElement = cookieArray[i];
+                while (cookieArrayElement.charAt(0)===' ') {
+                     cookieArrayElement = cookieArrayElement.substring(1,cookieArrayElement.length)};
+                if (cookieArrayElement.indexOf(nameEQ) === 0) {
+                     return cookieArrayElement.substring(nameEQ.length,cookieArrayElement.length);
+                }
+            }
+            return null;
+    }
+
+    cookieLanguage() {
+        const cookieValue = this.readCookie('language')
+        const languageBtns = document.getElementsByName("language");
+        languageBtns.forEach(function(element, index){
+            element.addEventListener('click', (event) => {
+                document.cookie = `language=${event.target.value}`
+            })
+            if(languageBtns[index].value === cookieValue){
+                languageBtns[index].checked = "checked";
+            }
         })
     }
 }

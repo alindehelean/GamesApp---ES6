@@ -20,7 +20,14 @@
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
     margin: 50px 50px;
 }
- 
+
+#language{
+    display: flex;
+    flex-direction: row;
+    border: calc(8px + 0.2vw) solid transparent;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 50px 50px;
+}
 .update{
     border: none;        
 }

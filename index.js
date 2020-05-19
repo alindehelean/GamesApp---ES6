@@ -14,6 +14,7 @@ async function startApp() {
         container1.appendChild(gameObj);
         games.initEvents();
         games.localStorageTheme();
+        games.cookieLanguage();
     }
 }
  
